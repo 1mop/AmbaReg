@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+
+}
+
+/* global container of vessel(with responsoive design use % instead of px)*/
+.container {
+  width: 100%;
+  max-width:
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button1{
+  background: brown;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  height: 22px;
+}
+
+/*header*/
+
+header{
+  background:#021116;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px; /*use min height for responsive design so that when the screen size changes, the height will adjust accordingly*/
+  border-bottom: brown 5px solid
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none; /* removes default underline on link elements*/
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/*by default unordered lists have padding : included in global css so it can affect the entire site design*/
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;   /* top right bottom left*/
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+header .highlight{
+  color: brown;
+}
+
+header .current a{
+  color: brown;
+  font-weight: bold;
+}
+/*showcase*/
+
+#showcase{
+  margin-top: 20px;
+}
+
+#showcase .showcase1{
+  float: left;
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+}
+
+#showcase .showcase1 img{
+  width: 350px;
+}
+#showcase .showcase1 h1, .showcase1 p{
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #1c1e3a;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: -20px;
+  line-height: 1.5;
+}
+#showcase .showcase1 h1{
+  font-size: 30px;
+}
+#showcase .showcase1 input{
+  color: #fff;
+  font-weight: bold;
+  background-color: #1c1e3a;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+/*searchdatabase*/
+
+#searchdatabase{
+  padding: 15px;
+  color: #ffffff;
+  background: #021116;
+  background-image: url('searchicon.png');
+}
+
+#searchdatabase h1{
+  float: left;
+}
+
+#searchdatabase form{
+  float: right;
+  margin-top: 25px;
+}
+
+#searchdatabase input[type="email"]{
+  padding: 12px 20px;
+  height: 25px;
+  width: 450px;
+  box-sizing: border-box;
+}
+
+/*main and the sub classes- section-will carry detail on the break down according to county and other relevant links to info*/
+
+#main{
+margin:0px;
+background-color: #0b2d05;
+color: #dceadf;
+line-height: 1.6em;
+font-size: 20px;
+font-family: Helvetica;
+box-sizing: border-box;
+}
+#main .main1{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+#main .main1 img{
+  width: 400px;
+  height: 300px;
+  padding-right: 40px;
+}
+#main .main1 ul{
+  list-style-type: none;
+}
+#main .main2{
+  float: left;
+  width: 40%;
+  text-align: left;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+.main2 ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  width: 400px;
+  background-color: #555;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  padding: 10px 10px;
+}
+.dropdown-content a{
+  color:#fff;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: red;}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+
+/*splits*/
+
+#splits{
+  margin-top: 20px;
+}
+
+#splits .split{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#splits .split img{
+  width: 100px;
+}
+
+
+/*datadisplay-a sample display of the latest information regarding casualties displayed for public access*/
+
+#datadisplay{
+    text-align: center;
+    width: 100%
+    border-collapse:collapse;
+    background-color: #332f2e;
+    color: #f4eae3;
+}
+#datadisplay th, td{
+  border: black 1px solid;
+  padding:10px;
+}
+
+
+/*dataform-form for visitors to input iformation for the database.*/
+
+#dataform{
+  margin: 0;
+  background-color:#f2c982;
+  border: black 3px solid;
+}
+#dataform legend{
+  text-align:center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+#dataform form{
+  font-size: 20px;
+}
+#dataform input[type=text]{
+  padding: 12px 20px;
+  box-sizing: border-box;
+  width: 50%;
+}
+#dataform input[type=checkbox]{
+  word-wrap: break-word;
+}
+/*footer*/
+
+footer{
+  padding: 15px;
+  font-size: 15px;
+  background: brown;
+  text-align: center;
+  color: #ffffff;
+}
